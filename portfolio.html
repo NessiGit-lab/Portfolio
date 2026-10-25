@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Vanessa Kollburg Projects</title>
+    <meta name="description"
+        content="Game Design Portfolio for Vanessa Kollburg, Game System Design, Game Quality Assurance, Game UI">
+    <meta name="author" content="Vanessa Kollburg">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <meta name="robots" content="index,follow">
+    <link type="text/css" rel="stylesheet" href="../assets/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/fonts.css">
+    <link type="text/css" rel="stylesheet" href="../css/variable.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/section.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex  align-center px-2">
+            <div class="flex header-logo align-center">
+                <a href=index.html><img src="./images/header_pic.png"
+                        alt="logo of a castle with the photo of Vanessa Kollburg in the middle"></a>
+                <a href="index.html">
+                    <ul class="flex header-name">
+                        <li>
+                            <h2>Vanessa Kollburg</h2>
+                        </li>
+                        <li>
+                            <p>Game Systems Designer</p>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <ul class="flex navigation align-center">
+                <li><a href="index.html">
+                        <h3>About</h3>
+                    </a></li>
+                <li><a href="resume.html">
+                        <h3>Résumé</h3>
+                    </a></li>
+                <li><a href="#">
+                        <h3>Portfolio</h3>
+                    </a></li>
+                <li>
+                    <button class="btn btn-primary"><a href="index.html#contact">
+                            <h3>Contact</h3>
+                        </a></button>
+                </li>
+            </ul>
+            <button class="hamburger" onclick="openNav()">
+                <i class="bi bi-list"></i>
+            </button>
+        </nav>
+        <!-- hamburger menu overlay -->
+        <div id="myNav" class="overlay display-none px-2 py-2">
+            <button class="closebtn" onclick="closeNav()">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="overlay-content flex">
+                <ul class="flex">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="resume.html">Résumé</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <section class="flex  abilities py-2 px-2">
+
+            <div class="flex justify-center color-bg ability-list">
+                <button class="btn btn-primary display-none work-link">
+                    <a href="#project-list">
+                        <h3>Previous Work</h3>
+                    </a>
+                </button>
+                <div class="grid-child py-1" id="SD">
+                    <h2>System Design</h2>
+                </div>
+                <div class="flex  abili-list">
+                    <ul>
+                        <li>
+                            <p> Design and Systems Design</p>
+                        </li>
+                        <li>
+                            <p> Creation and Upkeep of Game Design Documents(GDD)</p>
+                        </li>
+                        <li>
+                            <p> Economic Design and Balancing</p>
+                        </li>
+                        <li>
+                            <p> Turn based systems</p>
+                        </li>
+                        <li>
+                            <p> Simulation and Management Systems</p>
+                        </li>
+                        <li>
+                            <p> Prototyping in Unity, Godot and Unreal (2D+3D)</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-child py-1" id="QA">
+                    <h2>Quality Assurance</h2>
+                </div>
+                <div class="flex abili-list">
+                    <ul>
+                        <li>
+                            <p>Manual testing for Web, Mobile and Desktop Apps</p>
+                        </li>
+                        <li>
+                            <p>A/B testing and Cross Platform behavior</p>
+                        </li>
+                        <li>
+                            <p>Bug reports and checklists in Jira and ClickUp</p>
+                        </li>
+                        <li>
+                            <p>Gameloop and UI-flow checking</p>
+                        </li>
+                        <li>
+                            <p>Figma design validation</p>
+                        </li>
+                        <li>
+                            <p>Prototype testing in Unity, Unreal and Godot</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-child py-1" id="UI">
+                    <h2>UI/UX Design</h2>
+                </div>
+                <div class="flex abili-list">
+                    <ul>
+                        <li>
+                            <p>Player Research: Creation of UX Maps, Personas and competitor analysis</p>
+                        </li>
+                        <li>
+                            <p>Creation of Wire-frames and clickable Prototypes in Figma</p>
+                        </li>
+                        <li>
+                            <p>Design System with Components for Buttons, Icons and other reusable Components</p>
+                        </li>
+                        <li>
+                            <p>Game-Menu and Interface-Design</p>
+                        </li>
+                        <li>
+                            <p>Quest and Dialogue UI</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <section class="flex color-bg justify-center work" id="project-list">
+            <h2>Previous Work</h2>
+            <div class="flex work-thmbs justify-center">
+                <div class="flex thmb-card align-center">
+                    <a href="star-life.html"><img src="./images/thumbnail_star_life.png">
+                        <div class="flex thmb-text ">
+                            <h3>Star Life</h3>
+                            <p>Social MMO</p>
+                            <p>Flying Sheep Studios</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex thmb-card align-center">
+                    <a href="resource-vehicle.html"><img src="./images/thumbnail_Resource.png">
+                        <div class="flex thmb-text btn-secondary">
+                            <h3>Vehicle Management Simulator</h3>
+                            <p>Resource Management</p>
+                            <p>Xrality GmBH</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex thmb-card align-center">
+                    <a href="endlings.html"><img src="./images/thumbnail_Endlings.png">
+                        <div class="flex thmb-text">
+                            <h3>Endlings</h3>
+                            <p>2D Metroidvania with turn-based combat</p>
+                            <p>Personal project Godot</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex thmb-card align-center">
+                    <a href="piep.html"><img src="./images/thumbnail_Pieps.png">
+                        <div class="flex thmb-text">
+                            <h3>Piep einmal</h3>
+                            <p>Voice recognition</p>
+                            <p>Gamejam Unity 3D</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex thmb-card align-center">
+                    <a href="rem.html"><img src="./images/thumbnail_REM.png">
+                        <div class="flex thmb-text">
+                            <h3>Rem</h3>
+                            <p>3D Plattformer</p>
+                            <p>Gamejam Unreal</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex thmb-card align-center">
+                    <a href="wild-west-card.html"><img src="./images/thumbnail_wild_west.png">
+                        <div class="flex thmb-text">
+                            <h3>Wild West Race to the Top</h3>
+                            <p>Analogue Cardgame</p>
+                            <p>Personal Project</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex thmb-card align-center">
+                    <a href="wip.html"><img src="./images/thumbnail_WIP.png">
+                        <div class="flex thmb-text">
+                            <h3>WIP</h3>
+                            <p>Visual Novel</p>
+                            <p>Gamejam Unity</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex thmb-card align-center">
+                    <a href="sog.html"><img src="./images/thumbnail_SOG.png">
+                        <div class="flex thmb-text">
+                            <h3>Sea of Games</h3>
+                            <p>Figma prototype for a game-review website</p>
+                            <p>Personal Project</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+            document.querySelector("body").style.overflow = "hidden";
+        }
+        function closeNav() {
+            document.getElementById("myNav").classList.remove("display-block");
+            document.querySelector("body").style.overflow = "visible";
+        }
+    </script>
+
+</body>
+
+</html>

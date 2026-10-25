@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page "Endlings"</title>
+    <meta name="description"
+        content="Game Design Portfolio for Vanessa Kollburg, Project Page for the Metroidvania game Endlings, Game Quality Assurance, Game UI">
+    <meta name="author" content="Vanessa Kollburg">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <meta name="robots" content="index,follow">
+    <link type="text/css" rel="stylesheet" href="../assets/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/fonts.css">
+    <link type="text/css" rel="stylesheet" href="../css/variable.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/section.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex  align-center px-2">
+            <div class="flex header-logo align-center">
+                <a href="index.html">
+                    <img src="./images/header_pic.png"
+                        alt="logo of a castle with the photo of Vanessa Kollburg in the middle">
+                </a>
+
+                <a href="index.html">
+                    <ul class="flex header-name">
+                        <li>
+
+                            <h2>Vanessa Kollburg</h2>
+
+                        </li>
+                        <li>
+
+                            <p>Game Systems Designer</p>
+
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <ul class="flex navigation align-center">
+                <li><a href="index.html">
+                        <h3>About</h3>
+                    </a></li>
+                <li><a href="#resume">
+                        <h3>Résumé</h3>
+                    </a></li>
+                <li><a href="portfolio.html">
+                        <h3>Portfolio</h3>
+                    </a></li>
+                <li>
+                    <button class="btn btn-primary"><a href="index.html#contact">
+                            <h3>Contact</h3>
+                        </a></button>
+                </li>
+            </ul>
+            <button class="hamburger" onclick="openNav()">
+                <i class="bi bi-list"></i>
+            </button>
+        </nav>
+        <!-- hamburger menu overlay -->
+        <div id="myNav" class="overlay display-none px-1 py-2">
+            <button class="closebtn" onclick="closeNav()">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="overlay-content flex">
+                <ul class="flex">
+                    <li><a href="#rezepte">About</a></li>
+                    <li><a href="#about">Résumé</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+    </header>
+
+    <body>
+
+        <section class="flex justify-center  overview">
+
+            <div class="flex contributions">
+                <div class="grid-child py-2">
+                    <h2>Endlings</h2>
+                </div>
+                <h2>Overview</h2>
+                <ul>
+                    <li>
+                        <p>2D Metroidvania Plattformer with turn based Combat</p>
+                    </li>
+                    <li>
+                        <p>Originally made as a Bachelor thesis</p>
+                    </li>
+                    <li>
+                        <p>Creature Collector with branching story paths </p>
+                    </li>
+                    <li>
+                        <p>Solo developed project</p>
+                    </li>
+                </ul>
+                <h2>My Contributions</h2>
+                <ul>
+                    <li>
+                        <p>Combat Design</p>
+                        <ol>
+                            <li>Type system for a strength and weakness chart</li>
+                            <li>Attribute system for further combat balancing</li>
+                            <li> Move consumption, status effects and other smaller balancing</li>
+                            <li>Unique Boss battles, set in the combat screen and the overworld</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>UI Design</p>
+                        <ol>
+                            <li>Input definition and layout</li>
+                            <li>Design of the Creatures (Endlings) within the game</li>
+                            <li> Main HUD, Main-menu and Battle interface </li>
+                            <li>Visual of the game world biomes</li>
+                            <li>Three Main-character designs (male,female, non-binary)</li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <p>World Design</p>
+                        <ol>
+                            <li>Design of six biomes with unique environment and events</li>
+                            <li>Path progression and Story-Event planning</li>
+                            <li>Branching story path and trigger-events</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>QA Testing</p>
+                        <ol>
+                            <li>Prototyping within Godot</li>
+                            <li>Manual testing and readjusting of movement mechanics </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-pic"><img src="./images/thumbnail_Endlings.png"
+                    alt="Screenshot of OpenStreetMap used to locate game data">
+            </div>
+        </section>
+        <section class="flex justify-center color-bg lightbox">
+            <!-- Images used to open the lightbox -->
+            <div class="flex justify-center row">
+                <div class="flex justify-center column">
+                    <img src="./images/Endling-1mini.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="flex justify-center column">
+                    <img src="./images/Endling-2-mini.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="flex justify-center column">
+                    <img src="./images/Endling-3-mini.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="flex justify-center column">
+                    <img src="./images/Endling-4-mini.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                <div class="flex justify-center column">
+                    <img src="./images/Endling-5-mini.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                        <img src="./images/Endling-1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                        <img src="./images/Endling-2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="./images/Endling-3.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                        <img src="./images/Endling-4.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                        <img src="./images/Endling-5.png" style="width:100%">
+                    </div>
+
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="./images/Endling-1mini.png" onclick="currentSlide(1)"
+                            alt="Four Starter with alternative form">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./images/Endling-2-mini.png" onclick="currentSlide(2)"
+                            alt="Three Player Character Designs">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./images/Endling-3-mini.png" onclick="currentSlide(3)"
+                            alt="Boss battle requires plattforming to start battle">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./images/Endling-4-mini.png" onclick="currentSlide(4)"
+                            alt="World-Design planing in Miro">
+                    </div>
+                    <div class="column">
+                        <img class="demo" src="./images/Endling-5-mini.png" onclick="currentSlide(4)" alt="Type system">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </body>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+            document.querySelector("body").style.overflow = "hidden";
+        }
+        function closeNav() {
+            document.getElementById("myNav").classList.remove("display-block");
+            document.querySelector("body").style.overflow = "visible";
+        }
+        /* Lightbox */
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Vanessa Kollburg Main Page</title>
+    <meta name="description"
+        content="Game Design Portfolio for Vanessa Kollburg, Game System Design, Game Quality Assurance, Game UI">
+    <meta name="author" content="Vanessa Kollburg">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <meta name="robots" content="index,follow">
+    <link type="text/css" rel="stylesheet" href="../assets/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/fonts.css">
+    <link type="text/css" rel="stylesheet" href="../css/variable.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/section.css">
+</head>
+
+<body>
+    <header>
+        <nav class="flex  align-center px-2">
+            <div class="flex header-logo align-center">
+                <a href=#>
+                    <img src="./images/header_pic.png"
+                        alt="logo of a castle with the photo of Vanessa Kollburg in the middle">
+                </a>
+
+                <a href=#>
+                    <ul class="flex header-name">
+                        <li>
+
+                            <h2>Vanessa Kollburg</h2>
+
+                        </li>
+                        <li>
+
+                            <p>Game Systems Designer</p>
+
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <ul class="flex navigation align-center">
+                <li><a href="#">
+                        <h3>About</h3>
+                    </a></li>
+                <li><a href="resume.html">
+                        <h3>Résumé</h3>
+                    </a></li>
+                <li><a href="portfolio.html">
+                        <h3>Portfolio</h3>
+                    </a></li>
+                <li>
+                    <button class="btn btn-primary"><a href="#contact">
+                            <h3>Contact</h3>
+                        </a></button>
+                </li>
+            </ul>
+            <button class="hamburger" onclick="openNav()">
+                <i class="bi bi-list"></i>
+            </button>
+        </nav>
+        <!-- hamburger menu overlay -->
+        <div id="myNav" class="overlay display-none px-1 py-2">
+            <button class="closebtn" onclick="closeNav()">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="overlay-content flex">
+                <ul class="flex">
+                    <li><a href="#">About</a></li>
+                    <li><a href="resume.html">Résumé</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    </header>
+    <main>
+        <section class="flex skill-btn py-2 justify-center align-center">
+            <a href="portfolio.html#SD" class="btn btn-secondary">Systems Design</a>
+            <a href="portfolio.html#QA" class="btn btn-secondary">QA-testing</a>
+            <a href="portfolio.html#UI" class="btn btn-secondary">UI/UX Design</a>
+        </section>
+
+        <section class="hero flex justify-center align-center py-2">
+            <div class="flex hero-text text-align-left">
+                <h2 class="py-1-25 text-align-left">Hey there!</h2>
+                <p>My name is Vanessa Kollburg, and I am a passionate game designer specializing in KPI-driven systems
+                    design, quality assurance, and the creation of reusable UI components. </p>
+                <p>My belief is that games allow a form of creative expression that no other media can imitate, and it
+                    is my
+                    goal to help with the structure of those ideas so they can truly shine.</p>
+                <p>I hold a Bachelor of Arts in Game Design and graduated with a focus on systems design. Throughout my
+                    career I became especially proficient in designing for browser- and mobile-based projects and helped
+                    by
+                    providing in-depth QA testing as well.
+                    Recently I broadened my education by completing a program about UI- and UX-design using Figma. This
+                    allowed me to gain experience in the creation of clickable prototypes and components for menu and
+                    design
+                    interfaces.</p>
+                <p>My aim is to improve myself even further to bring the unique world of games to life.</p>
+            </div>
+            <div>
+                <img src="./images/hero_photo.png" alt="photo of Vanessa Kollburg">
+            </div>
+        </section>
+
+        <section class="flex examples justify-center py-2">
+            <h2 class="py-2">Work-Examples</h2>
+            <div class=" flex example-cards">
+                <div class="flex hero-card ">
+                    <a href="portfolio.html"><img src="./images/hero_GDD.png"
+                            alt="screenshotof a game design document"></a>
+                    <p>Detailed Game Design Document</p>
+                </div>
+                <div class="flex hero-card ">
+                    <a href="portfolio.html"><img src="./images/hero_economics.png"
+                            alt="screenshotof a game system structure"></a>
+                    <p>Game-economics and balancing</p>
+                </div>
+                <div class="flex hero-card ">
+                    <a href="portfolio.html"><img src="./images/hero_UI.png"
+                            alt="figma screenshotof a mobile prototype"></a>
+                    <p>UI components and clickable prototypes</p>
+                </div>
+            </div>
+        </section>
+        <section class="color-bg software flex justify-center align-center py-5">
+            <h2 class="py-2">Software Skills</h2>
+
+            <div class="grid-child py-2">
+                <h2>Game-Engines</h2>
+            </div>
+            <div class="card-container flex justify-center align-center">
+                <div class="s-card">
+                    <img src="./images/software_godot.png" alt="Godot logo">
+                    <p>Godot</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_unreal.png" alt="Unreal Engine logo">
+                    <p>Unreal Engine</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_unity.png" alt="Unity logo">
+                    <p>Unity</p>
+                </div>
+            </div>
+            <div class="grid-child py-2">
+                <h2>Systems Design and QA</h2>
+            </div>
+            <div class="card-container flex justify-center align-center">
+                <div class="s-card">
+                    <img src="./images/software_jira.png" alt="Atlassian Jira logo">
+                    <p>Jira</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_clickup.png" alt="ClickUp logo">
+                    <p>ClickUp</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_confluence.png" alt="Atlassian Confluence logo">
+                    <p>Confluence</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_miro.png" alt="Miro logo">
+                    <p>Miro</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_office.png" alt="Microsoft Office logo">
+                    <p>Microsoft suite</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_google.png" alt="Google Suite logo">
+                    <p>Google suite</p>
+                </div>
+            </div>
+            <div class="grid-child py-2">
+                <h2>UI-Design</h2>
+            </div>
+            <div class="card-container flex justify-center align-center">
+                <div class="s-card">
+                    <img src="./images/software_clip.png" alt="Clip Studio logo">
+                    <p>Clip Studio</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_figma.png" alt="Figma logo">
+                    <p>Figma</p>
+                </div>
+                <div class="s-card">
+                    <img src="./images/software_affinity.png" alt="Affinity logo">
+                    <p>Affinity</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="flex justify-center align-center" id="contact">
+        <h2 class="py-2">Contact me!</h2>
+        <a href="mailto:Vanessa.Kollburg@gmx.de">Vanessa.Kollburg@gmx.de</a>
+
+        <div class="socials py-2">
+            <a aria-label="linkedin" href="https://www.linkedin.com/in/vanessa-kollburg-b5431b2a5/"><i
+                    class="bi bi-linkedin"></i></a>
+            <a aria-label="upwork" href="https://www.upwork.com/freelancers/~0130bf9cb25b86ddc6"><img
+                    src="./images/upwork-1 1.png" alt="Upwork Logo"></a>
+        </div>
+        <p>© 2026 Vanessa Kollburg</p>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").classList.add("display-block");
+            document.querySelector("body").style.overflow = "hidden";
+        }
+        function closeNav() {
+            document.getElementById("myNav").classList.remove("display-block");
+            document.querySelector("body").style.overflow = "visible";
+        }
+    </script>
+</body>
+
+</html>

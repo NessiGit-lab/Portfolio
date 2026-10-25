@@ -1,0 +1,13 @@
+:root {
+    --medium: 'Roboto-Medium', 'Times New Roman', sans-serif;
+    --body-text: 'Roboto', 'Times New Roman', sans-serif;
+    --primary: #B4D2BA;
+    --secondary: #165757;
+    --base: #FFFFFF;
+    --dark: #01172F;
+    --highlight: #585191;
+    --btn-hover: #91518D;
+    --btn-clicked: #3F2E3D;
+    --section: #D9E8DC;
+
+}
