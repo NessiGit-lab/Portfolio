@@ -251,7 +251,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--highlight);
+    color: var(--btn-hover);
 }
 
 footer a:has(i) {
