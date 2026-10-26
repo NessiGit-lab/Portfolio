@@ -250,7 +250,7 @@ footer a {
     color: var(--primary);
 }
 
-footer>a:hover {
+footer a:hover {
     color: var(--highlight);
 }
 
