@@ -250,6 +250,10 @@ footer a {
     color: var(--primary);
 }
 
+footer>a:hover {
+    color: var(--highlight);
+}
+
 footer a:has(i) {
     color: black;
     font-size: 3.5rem;
